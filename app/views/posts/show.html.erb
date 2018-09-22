@@ -1,0 +1,4 @@
+<h1><%= post.title%> </h1>
+<p><%= post.content %></p>
+<%= link_to "Edit", edit_post_path(@post)%>
+<%= lint_to "Delete", @post, method: :delete, data:{confirm: "Are You sure?"  %>
